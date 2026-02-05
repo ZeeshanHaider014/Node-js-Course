@@ -5,6 +5,8 @@ const fs = require('fs');
 
 const result = os.userInfo();
 console.log(result);
-fs.appendFile('txt.txt', 'HI'+ user.username + '!', ()=>{
-    console.log('File is created  ');
-})
+
+// Use result.username instead of undefined user
+fs.appendFile('txt.txt', 'HI ' + result.username + '!\n', () => {
+    console.log('File is created');
+});
