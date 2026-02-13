@@ -2,8 +2,9 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Node.js is running 🚀");
+  res.send("Wellcome to FLAT 804");
 });
+app.get("/")
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
