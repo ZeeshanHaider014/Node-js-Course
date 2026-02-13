@@ -1,12 +1,16 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "express": "^5.2.1",
+=======
+>>>>>>> eee7322c790a0d9f808636c9bcaada8e9be78db0
     "lodash": "^4.17.21",
     "nodeman": "^1.1.2",
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
+<<<<<<< HEAD
   },
   "name": "js-course",
   "version": "1.0.0",
@@ -28,4 +32,7 @@
     "url": "https://github.com/ZeeshanHaider014/Node-js-Course/issues"
   },
   "homepage": "https://github.com/ZeeshanHaider014/Node-js-Course#readme"
+=======
+  }
+>>>>>>> eee7322c790a0d9f808636c9bcaada8e9be78db0
 }
