@@ -1,21 +1,9 @@
 {
-  "dependencies": {
-<<<<<<< HEAD
-    "express": "^5.2.1",
-=======
->>>>>>> eee7322c790a0d9f808636c9bcaada8e9be78db0
-    "lodash": "^4.17.21",
-    "nodeman": "^1.1.2",
-    "prompt-sync": "^4.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.11"
-<<<<<<< HEAD
-  },
   "name": "js-course",
   "version": "1.0.0",
   "description": "",
   "main": "1.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -23,7 +11,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZeeshanHaider014/Node-js-Course.git"
@@ -31,8 +18,14 @@
   "bugs": {
     "url": "https://github.com/ZeeshanHaider014/Node-js-Course/issues"
   },
-  "homepage": "https://github.com/ZeeshanHaider014/Node-js-Course#readme"
-=======
+  "homepage": "https://github.com/ZeeshanHaider014/Node-js-Course#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "lodash": "^4.17.21",
+    "nodeman": "^1.1.2",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
->>>>>>> eee7322c790a0d9f808636c9bcaada8e9be78db0
 }
