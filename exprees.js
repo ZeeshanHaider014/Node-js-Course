@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 
 const person = require("./models/person");
+const personlaptop = require("./models/personlaptop");
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
@@ -43,6 +44,41 @@ app.get("/person", async(req,res)=>{
 
   }
 });
+
+//*******************************PERSONLAPTOP APIS***************************** */
+
+app.get("/person/personlaptop", async(req,res)=>{
+  try{
+    const  data = await personlaptop.find();
+     console.log("data fetch");
+    res.status(200).json(data);
+  }catch(err){
+   console.log("internal server error");
+   res.status(500).json({ err: "ínternal server error" });
+
+  }
+});
+
+
+
+//post route to add a peson
+app.post("/person/personlaptop", async (req, res) => {
+  try {
+    const data = req.body; //ASSUMING req body containing person data
+
+    //create new person document using the mongoose model
+    const newPersonlaptop = new personlaptop(data);
+
+    //save new person into database
+    const response = await newPersonlaptop.save();
+    console.log("data saved", response);
+    res.status(200).json(response);
+  } catch (err) {
+    console.log("internal server error");
+    res.status(500).json({ err: "ínternal server error" });
+  }
+});
+/////
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
