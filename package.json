@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ZeeshanHaider014/Node-js-Course#readme",
   "dependencies": {
+    "body-parser": "^2.2.2",
     "express": "^5.2.1",
     "lodash": "^4.17.21",
     "mongoose": "^9.2.1",
